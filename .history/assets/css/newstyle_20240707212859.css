@@ -1,0 +1,14 @@
+.context{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+.svg-background {
+    position:
+    width: 100vw;
+    height: 100vh;
+    background-image: url('layered-peaks-haikei.svg');
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}

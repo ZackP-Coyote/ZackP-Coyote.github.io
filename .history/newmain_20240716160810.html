@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zack Powell</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/anotherCss.css">
+    <style>
+        .flex-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .container {
+            display: flex;
+            position: relative;
+            flex: 1 1 calc(30% - 0px); /* Adjust for gap */
+            margin-bottom: 30px;
+            overflow: hidden; /* Ensures that elements stay within the container */
+        }
+        .image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease; /* Smooth transition for hover effect */
+        }
+        .container:hover .image {
+            transform: scale(1.1); /* Scale image on hover */
+        }
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            transition: background-color 0.5s ease, transform 0.5s ease; 
+        }
+        .container:hover .text {
+            background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+            transform: translate(-50%, -50%) scale(1.1); /* Scale text on hover */
+        }
+        .navigation a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+        .navigation a:hover {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="context">
+
+<header>
+    <div class="topPart">
+        <pre>
+
+$$$$$$$$\                    $$\             $$$$$$$\                                    $$\ $$\ 
+\____$$  |                   $$ |            $$  __$$\                                   $$ |$$ |
+    $$  / $$$$$$\   $$$$$$$\ $$ |  $$\       $$ |  $$ | $$$$$$\  $$\  $$\  $$\  $$$$$$\  $$ |$$ |
+   $$  /  \____$$\ $$  _____|$$ | $$  |      $$$$$$$  |$$  __$$\ $$ | $$ | $$ |$$  __$$\ $$ |$$ |
+  $$  /   $$$$$$$ |$$ /      $$$$$$  /       $$  ____/ $$ /  $$ |$$ | $$ | $$ |$$$$$$$$ |$$ |$$ |
+ $$  /   $$  __$$ |$$ |      $$  _$$<        $$ |      $$ |  $$ |$$ | $$ | $$ |$$   ____|$$ |$$ |
+$$$$$$$$\\$$$$$$$ |\$$$$$$$\ $$ | \$$\       $$ |      \$$$$$$  |\$$$$$\$$$$  |\$$$$$$$\ $$ |$$ |
+\________|\_______| \_______|\__|  \__|      \__|       \______/  \_____\____/  \_______|\__|\__|                                                                                                
+        </pre>
+    </div> 
+
+    <div class="headings">  
+        <h2>Web Developer / Game Designer / Web Applications</h2>
+
+    <div class="navigation">
+        <a href="index.html">Home</a>
+        <a href="PreviousWork.html">Previous Work</a>
+        <a href="foodFateDoc.html">FoodFate</a>
+        <a href="FMM_Doc.html">Find My Microwave</a>
+        <a href="DoomStrikeDoc.html">DoomStrike</a>
+
+    </div>
+
+</header>
+<section>
+    <h2>About Me</h2>
+    <p>I graduated from The California State University of San Bernardino in December 2023 and received my Bachelor's of Arts in Computer Systems.<br>
+    I have been applying my knowledge in programming and game design to create a variety of projects. I am currently seeking a position that I would apply my skills to.<br>
+    I have a passion for creating games and web applications that are both fun and useful. I am always looking for new opportunities to learn and grow as a developer.
+    </p>
+    <div class="container">
+        <a href="BattleFront1.html">
+            <img src="pictures/SWBF1.jpeg" alt="Star Wars Battlefront 1" class="image">
+            <div class="text">Star Wars Battlefront 1</div>
+        </a>
+    </div>
+
+    <div class="flex-container">
+        <div class="container">
+            <a href="BattleFront2.html">
+                <img src="pictures/SWBF2.jpeg" alt="Star Wars Battlefront 2" class="image">
+                <div class="text">Star Wars Battlefront 2</div>
+            </a>
+        </div>
+        <div class="container">
+            <a href="TitanFall2.html">
+                <img src="pictures/TF2.jpeg" alt="TitanFall 2" class="image">
+                <div class="text">TitanFall 2</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="container">
+            <a href="BattleField5.html">
+                <img src="pictures/BF5.jpeg" alt="Battlefield 5" class="image">
+                <div class="text">Battlefield 5</div>
+            </a>
+        </div>
+        <div class="container">
+            <a href="BattleField1.html">
+                <img src="pictures/BF1.jpeg" alt="Battlefield 1" class="image">
+                <div class="text">Battlefield 1</div>
+            </a>
+        </div>
+    </div>
+
+</section>
+
+</div>
+
+</body>
+</html>

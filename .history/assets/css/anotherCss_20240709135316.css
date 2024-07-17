@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    font-family: 'Tiny5', sans-serif;
+    color: white;
+    background-color: black;
+}
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 400px;
+    padding: 100px;
+}
+.svg-background{
+    position:relative;
+    width: 90vw;
+    /*height: 100vh;*/
+    background-image: url('polygon-scatter-haikei (2).svg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+.topPart{
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.25em;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+.headings{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.25em;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    grid-gap: 15px;
+    font-size: 1.25em;
+    width: 90%;
+    margin-left: 5%;
+}
+.listingMain{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+.subHeadings{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.5em;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    text-decoration: underline;
+}
+.listingProjects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+.listingVideos{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    grid-gap: 30px;
+    width: 80%;
+
+}

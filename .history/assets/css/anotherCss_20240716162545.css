@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    font-family: 'Tiny5', sans-serif;
+    color: white;
+    background-color: black;
+}
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 400px;
+    padding: 100px;
+}
+
+.topPart{
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.25em;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.headings{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.25em;
+    margin-left: 5%;
+}
+
+.subHeadings{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.5em;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    text-decoration: underline;
+}
+.listContainer
