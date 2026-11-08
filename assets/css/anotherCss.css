@@ -147,3 +147,118 @@ section{
     width: 100%;
     height: 360px;
 }
+
+/* ---------- Tablet / mobile ---------- */
+@media (max-width: 900px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    section {
+        padding: 40px 24px;
+        min-height: 0;
+        align-items: stretch;
+    }
+    section > *,
+    .headings > * {
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    .headings {
+        align-items: stretch;
+    }
+    /* Scale the ASCII-art name to fit the screen width */
+    header pre {
+        font-size: 1.45vw;
+        margin-left: -9vw;
+        overflow: hidden;
+    }
+    .topPart,
+    .headings {
+        margin-left: 0;
+        padding: 0 16px;
+        font-size: 1em;
+    }
+    .navbar {
+        padding: 8px 10px;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 8px;
+    }
+    .navigation a,
+    .navbar a {
+        margin-right: 0;
+        padding: 8px 6px;
+    }
+    .text {
+        font-size: 5vw;
+    }
+    .container > a {
+        display: block;
+        width: 100%;
+    }
+    /* Screenshot rows on the project documentation pages */
+    .container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .container img {
+        max-width: 100%;
+        height: auto;
+    }
+    .videoItem {
+        width: calc(50% - 20px);
+    }
+    .videoItem iframe {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+    p a {
+        overflow-wrap: anywhere;
+    }
+}
+
+/* ---------- Phones ---------- */
+@media (max-width: 600px) {
+    section {
+        padding: 24px 16px;
+    }
+    h1 {
+        font-size: 1.6em;
+    }
+    .header {
+        font-size: 1.5em;
+    }
+    /* Stack the project tiles one per row */
+    .flex-container {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        flex-basis: auto;
+    }
+    .text {
+        font-size: 7vw;
+        width: 80%;
+    }
+    .programming-container {
+        width: 100%;
+    }
+    .programming-list {
+        margin: 0 4px;
+        padding-left: 20px;
+    }
+    .listingVideos {
+        padding: 0;
+    }
+    .videoItem {
+        width: 100%;
+    }
+}
